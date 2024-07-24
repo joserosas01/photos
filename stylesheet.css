@@ -1,0 +1,408 @@
+body {
+    background: #FFFAF0;
+}
+
+.banner {
+    background-color: silver;
+    height: auto;
+    width: 1300px;
+    margin: 50px auto;
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 30px;
+    margin-bottom: 100px;
+    border-radius: 15px;
+}
+
+.big-container {
+    background-color: black;
+    height: auto;
+    width: 1300px;
+    margin: 50px auto;
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 30px;
+    margin-bottom: 100px;
+    border-radius: 15px;
+}
+
+.big-container p {
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    margin: 25px 0;
+}
+
+.head {
+    color: white;
+    text-align: center;
+    padding: 50px;
+    font-family: Lucida Console, Monospace;
+}
+
+header {
+    background-color: black;
+    color: #fff;
+    padding: 20px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: center;
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 40px;
+    font-size: 20px;
+    font-family: Lucida Console, Monospace;
+}
+
+nav ul li.home-link {
+    text-align: left;
+    margin-right: 900px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.button-container {
+    margin-top: 70px;
+    letter-spacing: 2px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.button {
+    text-decoration: none;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 15px 50px;
+    display: inline-block;
+    padding: 10px 20px;
+    color: black;
+    margin-bottom: 50px;
+    font-weight: bold;
+}
+
+.button:hover {
+    background-color: #DCDCDC;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 20px 0;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.contact-info,
+.footer-links {
+    flex: 1;
+    padding: 0 20px;
+}
+
+.contact-info h3,
+.footer-links h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 5px;
+}
+
+.link-button {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.link-button:hover {
+    color: #DCDCDC;
+}
+
+.copyright {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.project {
+    background-color: black;
+    border: 1px solid #eaeaea;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px;
+}
+
+.project h2 {
+    font-size: 30px;
+    color: white;
+    margin-bottom: 30px;
+    font-family: Lucida Console, Monospace;
+    text-align: center;
+}
+
+.project p {
+    font-size: 16px;
+    color: white;
+    margin-bottom: 20px;
+    font-family: Lucida Console, Monospace;
+}
+
+.project a {
+    text-decoration: none;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    display: inline-block;
+    color: black;
+    padding: 10px 20px;
+    margin: 20px;
+    font-weight: bold;
+}
+
+.project a:hover {
+    background-color: #DCDCDC;
+}
+
+/* Initially hide project details */
+.project-details {
+    display: none;
+}
+
+.projects-box{
+    background-color: black;
+    height: 1000x;
+    width: 1300px;
+    text align: center;
+    margin: 50px auto;
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 30px;
+    margin-bottom: 100px;
+    border-radius: 15px;
+}
+
+.link-folder {
+    display: inline-block;
+    margin: 10px;
+}
+
+.link-folder a {
+    text-decoration: none;
+    color: #FFF;
+    padding: 10px;
+    border: 1px solid #555;
+    border-radius: 8px;
+    background-color: #333;
+    transition: background-color 0.3s, border-color 0.3s, transform 0.3s;
+}
+
+.link-folder a:hover {
+    background-color: #555;
+    border-color: #777;
+    transform: translateY(-2px);
+}
+
+.folder-container {
+    text-align: center;
+}
+
+/* Ensure only two folders per row */
+.link-folder:nth-child(odd) {
+    clear: both;
+}
+
+.button {
+    text-decoration: none;
+    background-color: white;
+    border: 5px solid #555;
+    border-radius: 20px;
+    padding: 20px 60px;
+    color: #000;
+    transition: background-color 0.3s, border-color 0.3s, transform 0.3s;
+}
+
+.button:hover {
+    background-color: #555;
+    border-color: #777;
+    color: #FFF;
+}
+
+.folder-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px 20px;
+}
+
+.link-folder {
+    flex: 0 0 calc(50% - 20px); /* Two folders per row with margin */
+    margin: 10px;
+}
+
+.locations {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.location {
+    width: 40%; /* Adjust width as needed */
+    margin-bottom: 20px;
+}
+
+.location img {
+    width: 100%;
+    height: auto;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.button-container {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.visit-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.visit-button:hover {
+    background-color: #0056b3;
+}
+
+.priceLocation {
+    width: 30%; /* Adjust width as needed */
+    margin-bottom: 20px;
+}
+
+.priceLocation img {
+    width: 100%;
+    height: auto;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+}
+
+.price-container {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.price {
+    font-size: 18px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+
+
+
+/* Form Styles */
+.form-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: black; /* Change to match your design */
+    border: 1px solid #ccc; /* Add a border */
+    border-radius: 10px; /* Match the border-radius */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Match the box-shadow */
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    color: white; /* Adjust text color */
+}
+
+/* Placeholder Styles */
+.form-container input[type="text"]::placeholder,
+.form-container input[type="email"]::placeholder,
+.form-container input[type="tel"]::placeholder,
+.form-container textarea::placeholder {
+    color: gray; /* Adjust placeholder text color */
+    font-style: italic; /* Italicize placeholder text */
+}
+
+/* Increase opacity when input is focused */
+.form-container input[type="text"]:focus::placeholder,
+.form-container input[type="email"]:focus::placeholder,
+.form-container input[type="tel"]:focus::placeholder,
+.form-container textarea:focus::placeholder {
+    color: transparent; /* Hide placeholder text when input is focused */
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="tel"],
+.form-group textarea {
+    width: 97%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-group textarea {
+    height: 100px;
+}
+
+.form-group button {
+    background-color: white; /* Adjust button color */
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.form-group button:hover {
+    background-color: gray; /* Adjust button hover color */
+}
+
+.flash-messages {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    text-align: center;
+    background-color: white; /* Yellow background color */
+    margin-bottom: 10px;
+    padding: 10px;
+    color: black; /* White text color */
+    font-weight: bold;
+    border-radius: 5px; /* Rounded corners */
+}
+
+.flash-message {
+    margin-bottom: 10px;
+}

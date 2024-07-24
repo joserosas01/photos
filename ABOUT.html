@@ -1,0 +1,50 @@
+{% extends "layout.html" %}
+{% block body %}
+    <div class="project">
+        <h2>ABOUT COMPANY</h2>
+        <p>DESCRIPTION</p>
+        <div class="button-container">
+            <a class="button" href="PHOTOS">ACCESS</a>
+        </div>
+    </div>
+
+    <div>
+        {% with messages = get_flashed_messages() %}
+            {% if messages %}
+                {% for message in messages %}
+                    <div class="alert alert-success">
+                        {{ message }}
+                    </div>
+                {% endfor %}
+            {% endif %}
+        {% endwith %}
+    </div>
+
+<!--<div class="form-container">
+    <form action="/" method="POST">
+        <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Contact Info:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email / phone number" required>
+        </div>
+        <div class="form-group">
+            <label for="photo">Photo to Purchase:</label>
+            <input type="text" id="photo" name="photo" placeholder="Enter the photo name or ID" required>
+        </div>
+        <div class="form-group">
+            <label for="comment">Additional Comments:</label>
+            <textarea id="comment" name="comment" placeholder="Enter any additional comments"></textarea>
+        </div>
+        <div class="form-group">
+            <button type="submit">Submit</button>
+        </div>
+    </form>
+</div>
+
+-->
+
+
+{% endblock %}

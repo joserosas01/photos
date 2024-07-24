@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='stylesheet.css') }}">
+    <!-- clciking photos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="path/to/lightbox.css">
+    <script src="path/to/lightbox.js"></script>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-KyZXEAg3QhqLMpG8r+J2Z4vNC9s5pzbze1Rkf5C5S0z5TK9S6Zj6q5i6OeJ3Oz3K1J" crossorigin="anonymous"></script>
+
+
+    <title>COMPANY NAME</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li class="home-link"><a href="/">COMPANY NAME(LOGO)</a></li>
+                <li><a href="ABOUT">ABOUT</a></li>
+                <li><a href="PRICES">PRICES</a></li>
+                <li><a href="PHOTOS">PHOTOS</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="flash-messages">
+        {% with messages = get_flashed_messages() %}
+            {% if messages %}
+                {% for message in messages %}
+                    <div class="flash-message">{{ message }}</div>
+                {% endfor %}
+            {% endif %}
+        {% endwith %}
+    </div>
+
+    <main>
+    {% block body %} {% endblock %}
+    </main>
+</body>
+
+<footer>
+    <div class="footer-container">
+        <div class="contact-info">
+            <h3>Contact Information</h3><hr>
+            <p>Email: ...</p>
+            <p>Phone: ...</p>
+            <p>Address: ...</p><hr>
+            <!--<a class="link-button" href="">INSTAGRAM</a> -->
+        </div>
+        <div class="footer-links">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a class="link-button" href="/">HOME</a></li>
+                <li><a class="link-button" href="ABOUT">ABOUT COMPANY</a></li>
+                <li><a class="link-button" href="PRICES">ABOUT PRICES</a></li>
+                <li><a class="link-button" href="PHOTOS">ACCESS PHOTOS</a></li>
+            </ul>
+        </div>
+       <!-- <button id="back-to-top-btn" title="Back to Top">^</button> -->
+    </div>
+    <div class="copyright">
+        <p>&copy; 2023 company. All rights reserved.</p>
+    </div>
+</footer>
+
+</html>
